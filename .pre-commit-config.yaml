@@ -7,9 +7,10 @@ repos:
       - id: black
         name: black
         entry: black
-        language: system
+        language: python
         stages: [commit]
         types: [python]
+        additional_dependencies: ["click==8.0.4"]
 
       - id: codespell
         name: codespell
